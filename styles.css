@@ -1,0 +1,157 @@
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: auto;
+}
+
+nav {
+    background-color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    padding: 5px 10px;
+    color: black;
+}
+
+.product-container {
+    width: 800px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+
+}
+.product-image {
+    width: 50%;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.promo-code {
+    border: 1px double #f0853e;
+    background-color: #f5f7ac;
+    padding: 10px;
+    width: 80%;
+    position: absolute;
+    left: 26px;
+    margin-top: 25px;
+}
+
+.promo-code:hover{
+    background-color: #f0853e;
+    color: white;
+}
+
+.product-detail {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.related-product {
+    width: 23%;
+    background-color: #f5f7ac;
+    padding: 20px;
+    margin: 0 1%;
+    border: 1px solid #000000;
+    text-align: center;
+    position: relative;
+}
+
+.related-product img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.related-product-name {
+    background-color: rgb(0,0,0,0.6);
+    color: white;
+    /* padding: 5px; */
+    position: absolute;
+    /* top: -30px; */
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    visibility: hidden;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.related-product:hover .related-product-name {
+    visibility: visible;
+}
+
+.team-member img{
+    border-radius: 50%;
+    background: white;
+    width: 200px;
+    height: 200px;
+}
+.team-member{ 
+    text-align: center;
+}
+
+.caption {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(216, 19, 19, 0.489);
+  padding: 5px;
+  display: none;
+}
+
+.product-container:hover .caption {
+  display: block;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
